@@ -1,0 +1,152 @@
+:root {
+  --corbett-blue: #31baeb;
+  --corbett-green: #208d43;
+
+  --background: #f6f9f8;
+  --surface: #ffffff;
+
+  --text: #21343b;
+  --muted: #66777d;
+  --border: #dce5e2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+}
+
+.portal,
+.report {
+  width: min(900px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: var(--corbett-green);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  margin: 0 0 16px;
+
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.08;
+}
+
+.intro,
+.report-period {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+
+  margin-top: 24px;
+  padding: 12px 18px;
+
+  border-radius: 8px;
+
+  background: var(--corbett-green);
+  color: #ffffff;
+
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.status {
+  display: inline-block;
+
+  margin: 8px 0 28px;
+  padding: 7px 12px;
+
+  border: 1px solid var(--corbett-green);
+  border-radius: 999px;
+
+  color: var(--corbett-green);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.test-card {
+  max-width: 420px;
+
+  padding: 24px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+
+.test-card h2 {
+  margin-top: 0;
+}
+
+.usage-label {
+  margin-bottom: 6px;
+  color: var(--muted);
+}
+
+.usage {
+  margin: 0;
+
+  color: var(--corbett-blue);
+
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.helper {
+  margin-top: 36px;
+
+  color: var(--muted);
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.error {
+  margin-top: 24px;
+  padding: 16px;
+
+  border: 1px solid #b42318;
+  border-radius: 8px;
+
+  color: #b42318;
+  background: #ffffff;
+}
+
+@media (max-width: 430px) {
+
+  .portal,
+  .report {
+    width: min(100% - 28px, 900px);
+    padding: 40px 0;
+  }
+
+  .test-card {
+    padding: 20px;
+  }
+
+  h1 {
+    overflow-wrap: normal;
+    word-break: normal;
+    white-space: normal;
+  }
+}
